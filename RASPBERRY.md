@@ -17,6 +17,8 @@ Open a terminal and run the following commands:
 sudo raspi-config
 ```
 
+or the GUI version " Raspberry Config" 
+
 In the configuration tool, do the following:
 
 * in `Interface options`, enable `SSH`, `SPI`, `I2C`, `Serial Port`, `1-Wire`
@@ -26,6 +28,11 @@ In the configuration tool, do the following:
 In the top right of the screen, click on the network icon and connect to your WiFi network.
 
 Then click on the same icon, select `Edit connections..`, and configure the IP address for the Ethernet wired connection (use DHCP is connected to the TCP infrastructure, or a static IP if connected to a local-only switch). 
+
+for Eduroam, use this configuration : Wifi Security : WPA & WPA2 ; Authentication : Protected EAP, click NO CA certificate required; PEAP version : Automatic, Inner authentication : MSCHAPv2
+
+For wire connection : 192.168.1.102 (or other 103, 104...) submask 16 (255.255...) 
+
 
 Open a terminal and type this command:
 
